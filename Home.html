@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Book Shop</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color: #ada299; margin-bottom: 5px;">
+    <nav class="navbar navbar-expand-lg " style="background-color: #2c3e50; margin-bottom: 5px;">
       <div class="d-flex justify-content-between" ></div>
         <div class="container-fluid ">
-          <i class="fa fa-book me-2" style="font-size:36px"></i>
-          <p class="navbar-brand mb-0 h1" style="font-size:26px"  href="#">Book Shop</p>
+          <i class="fa fa-book me-2" style="font-size:36px; color: rgb(190, 193, 196);"></i>
+          <p class="navbar-brand mb-0 h1" style="font-size:35px; font-family: 'Brush Script MT', cursive; color: white;"  href="#">Book Shop</p>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -22,27 +23,31 @@
             <div class="d1">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" id="navBU" aria-current="page" style="font-size:18px" href="#">Home</a>
+                    <a class="nav-link active" id="navBU" aria-current="page" style="font-size:18px; font-weight: bolder; color: white;" href="Home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" id="navBU" style="font-size:18px" href="#">Add Book </a>
+                    <a class="nav-link active" id="navBU" style="font-size:18px; font-weight: bolder; color: white;" href="All book/all.html">All Book </a>
                 </li>   
                 <li class="nav-item">
-                  <a class="nav-link active" id="navBU" style="font-size:18px" href="#">Watch List</a>
+                  <a class="nav-link active" id="navBU" style="font-size:18px; font-weight: bolder; color: white;" href="Watch List/watch.html">Watch List</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link active" id="navBU" style="font-size:18px" href="#">Log in </a>
+                <a class="nav-link active" id="navBU" style="font-size:18px; font-weight: bolder; color: white;" href="Log in/index.html">Log in </a>
             </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" id="navBU" style="font-size:18px; font-weight: bolder; color: white;" href="shopping cart/shopping.html"><i class="fa fa-shopping-cart" style="font-size:30px;color:white"></i></a>
+          </li>
                 </ul>
            </div >
             <form class="d-flex " role="search">
               <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-danger me-3" type="submit">Search</button>
+              <button class="bu1"  type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
-      <div id="slide">
+      <div id="slide" style="background-color: #f2f5f5;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -71,21 +76,12 @@
         </div>
       </div>
 
-<div class="select">
-  <select name="category" id="" class="se1" >
-    <option value="" class="op">All Categories </option>
-    <option value="" class="op">One</option>
-    <option value="" class="op">Two</option>
-    <option value="" class="op">Three</option>
-  </select>
-  <button class="btn btn-outline-secondary">Select</button>
-</div>
-
-  <div class="shell" >
+  <div class="shell" style="background-color: #f2f5f5;">
     <div class="container" >
+      <h3 class="header"> TOP BOOKS  </h3><hr>
       <div class="row" >
         <div class="col-md-3">
-          <div class="wsk-cp-product" style="background-color: rgb(243, 221, 221);">
+          <div class="wsk-cp-product" >
             <div class="wsk-cp-img" >
               <img src="Image/m1.jpg" alt="Product" class="img-responsive" />
             </div>
@@ -101,7 +97,9 @@
               </div>
               <div class="card-footer">
                 <div class="wcf-left"><span class="price">$18.39</span></div>
-                <div class="wcf-right"><button class="btn btn-secondary">Buy</button></div>
+                <div class="wcf-right"><button class="btn btn-secondary">Buy </button></div>
+                <form action=""><div class="wcf-right"><button class="btn btn-outline-secondary me-1"><span>&#9733;</span></button></div></form>
+                
               </div>
             </div>
           </div>
@@ -122,6 +120,7 @@
               <div class="card-footer">
                 <div class="wcf-left"><span class="price">$22.69</span></div>
                 <div class="wcf-right"><button class="btn btn-secondary">Buy</button></div>
+                <div class="wcf-right"><button class="btn btn-outline-secondary me-1"><span>&#9733;</span></button></div>
               </div>
             </div>
           </div>
@@ -142,6 +141,7 @@
               <div class="card-footer">
                 <div class="wcf-left"><span class="price">$15</span></div>
                 <div class="wcf-right"><button class="btn btn-secondary">Buy</button></div>
+                <div class="wcf-right"><button class="btn btn-outline-secondary me-1"><span>&#9733;</span></button></div>
               </div>
             </div>
           </div>
@@ -162,35 +162,156 @@
               <div class="card-footer">
                 <div class="wcf-left"><span class="price">$32.99</span></div>
                 <div class="wcf-right"><button class="btn btn-secondary">Buy</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="wsk-cp-product">
-            <div class="wsk-cp-img"><img src="Image/q5.jpg" alt="Product" class="img-responsive" /></div>
-            <div class="wsk-cp-text">
-              <div class="category">
-                <span>Drama</span>
-              </div>
-              <div class="title-product">
-                <h3>The Moonstone</h3>
-              </div>
-              <div class="description-prod">
-                <p>Description Product tell me how to change playlist height </p>
-              </div>
-              <div class="card-footer">
-                <div class="wcf-left"><span class="price">$8.59</span></div>
-                <div class="wcf-right"><button class="btn btn-secondary">Buy</button></div>
+                <div class="wcf-right"><button class="btn btn-outline-secondary me-1"><span>&#9733;</span></button></div>
               </div>
             </div>
           </div>
         </div>
 
+
+        <h3 class="header" id="header1"> AUTHORS  </h3><hr>
+
+
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="Image/a1.jpg" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="title-product" id="title2">
+                <h3>David Rosenfelt</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="Image/a2.jpg" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="title-product" id="title2">
+                <h3>Nelson DeMille</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="Image/a3.jpg" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="title-product" id="title2">
+                <h3>James Patterson</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="Image/a4.jpg" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="title-product" id="title2">
+                <h3>Gregg Hurwitz</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
       </div>
       </div>
     </div>
   </div>
+
+
+  <footer class="footer">
+    <div class="footer__addr">
+      <h1 class="footer__logo">Book Shop</h1>
+  
+      <h2>Contact</h2>
+  
+      <address>
+        BAGHDAD, IRAQ<br>
+  
+        <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+      </address>
+    </div>
+  
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Rewards</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Join Now</a>
+          </li>
+  
+          <li>
+            <a href="#">Learn More</a>
+          </li>
+  
+          <li>
+            <a href="#">Manage Account</a>
+          </li>
+        </ul>
+      </li>
+  
+      <li class="nav__item">
+        <h2 class="nav__title">News & Info</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Press Releases</a>
+          </li>
+  
+          <li>
+            <a href="#">About Our Products</a>
+          </li>
+  
+          <li>
+            <a href="#">Product Support</a>
+          </li>
+  
+          <li>
+            <a href="#">Product Manuals</a>
+          </li>
+  
+          <li>
+            <a href="#">Product Registration</a>
+          </li>
+  
+          <li>
+            <a href="#">Newsletter Sign Up</a>
+          </li>
+        </ul>
+      </li>
+  
+      <li class="nav__item">
+        <h2 class="nav__title">Support</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+  
+          <li>
+            <a href="#">Help Desk</a>
+          </li>
+  
+          <li>
+            <a href="#">Forums</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  
+    <div class="legal">
+      <p>&copy; 2022 Copyright.</p>
+  
+    </div>
+  </footer>
+  
   
 
 
