@@ -16,9 +16,16 @@ body{
 
 #navBU:hover{
     text-decoration: underline 3px #7f8c8d;
-
-
     
+}
+
+.by{
+  color: white;
+  text-decoration: none;
+}
+
+.by:hover{
+  color: white;
 }
 
 .bu1 {

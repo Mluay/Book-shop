@@ -29,6 +29,15 @@ body{
   margin-top: 40px;
 }
 
+.by{
+  color: white;
+  text-decoration: none;
+}
+
+.by:hover{
+  color: white;
+}
+
 
 .header{
   font-size: 25px;
